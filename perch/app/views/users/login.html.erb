@@ -1,0 +1,10 @@
+<div id="cir1">&nbsp;</div>
+<div id="cir2">&nbsp;</div>
+<div id="cir3">&nbsp;</div>
+<div id="login">
+  <div id="title">Perch</div>
+  <%= form_tag "/users/login_submit" do %>
+    <%= text_field_tag :username, nil, :placeholder => "username..."%>
+    <%= submit_tag "Sign in", :id => "signin" %>
+  <% end %>
+</div>

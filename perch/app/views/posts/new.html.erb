@@ -1,0 +1,14 @@
+<div class="posting">
+  <div id="cir1"><%= link_to "post", "/posts/new" %></div>
+  <div id="cir2"><%= link_to "feed", "/posts" %></div>
+  <div id="cir3"><%= link_to "sign out", "/users/sign_out" %></div>
+</div>
+
+<div id="posting" class="cf">
+  <%= form_tag "/posts/create" do %>
+    <%= text_area_tag :message, nil,:placeholder => "my something...", :id => "msg" %>
+  <br>
+    <%= button_tag "Cancel", :type => 'button', :id => "cancel" %>
+    <%= submit_tag "Post!", :id => "post" %>
+  <% end %>    
+</div>

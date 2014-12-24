@@ -1,0 +1,91 @@
+<div class="feed">
+  <div id="cir1"><%= link_to "post", "/posts/new" %></div>
+  <div id="cir2"><%= link_to "feed", "/posts" %></div>
+  <div id="cir3"><%= link_to "sign out", "/users/sign_out" %></div>
+</div>
+
+<div id="feed">
+  <div id="col1" class="col">
+    <% Post.col(0).each do |p| %>
+      <div class="msg c1">
+        <div class="text"><%= p.content %></div>
+        <div class="meta">
+          <div class="author"><%= p.user.username %></div>
+        </div>
+      </div>
+    <% end %>
+    <% if false %>
+    <div class="msg c1">
+      <div class="text">This is a good day</div>
+      <div class="meta">
+        <div class="author">Andrew</div>
+        <div class="date">5/3</div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <div id="col2" class="col">
+    <% Post.col(1).each do |p| %>
+      <div class="msg c2">
+        <div class="text"><%= p.content %></div>
+        <div class="meta">
+          <div class="author"><%= p.user.username %></div>
+        </div>
+      </div>
+    <% end %>
+    <% if false %>
+    <div class="msg c2">
+      <div class="text">This is a good day. And asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf </div>
+      <div class="meta">
+        <div class="author">Andrew</div>
+        <div class="date">5/3</div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <div id="col3" class="col">
+    <% Post.col(2).each do |p| %>
+      <div class="msg c3">
+        <div class="text"><%= p.content %></div>
+        <div class="meta">
+          <div class="author"><%= p.user.username %></div>
+        </div>
+      </div>
+    <% end %>
+    <% if false %>
+    <div class="msg c3">
+      <div class="text">This is a good day</div>
+      <div class="meta">
+        <div class="author">Andrew</div>
+        <div class="date">5/3</div>
+      </div>
+    </div>
+    <div class="msg c5">
+      <div class="text">This is a good day. And asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf </div>
+      <div class="meta">
+        <div class="author">Andrew</div>
+        <div class="date">5/3</div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <div id="col4" class="col">
+    <% Post.col(3).each do |p| %>
+      <div class="msg c4">
+        <div class="text"><%= p.content %></div>
+        <div class="meta">
+          <div class="author"><%= p.user.username %></div>
+        </div>
+      </div>
+    <% end %>
+    <% if false %>
+    <div class="msg c4">
+      <div class="text">This is a good day</div>
+      <div class="meta">
+        <div class="author">Andrew</div>
+        <div class="date">5/3</div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

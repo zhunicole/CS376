@@ -1,0 +1,59 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: Ariel;
+}
+
+a{
+  text-decoration:none;
+  color:black;
+}
+
+#cir1 {
+  position: absolute;
+  top: 300px;
+  left: 400px;
+  background-color: #e3d4ea;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+#cir2 {
+  position: absolute;
+  top: 290px;
+  left: 300px;
+  background-color: #cee7ea;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+#cir3 {
+  position: absolute;
+  top: 150px;
+  left: 300px;
+  background-color: #c6e8c6;
+  border-radius: 80px;
+  width: 80px;
+  height: 80px;
+}
+
+#login {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 200px;
+  text-align: center;
+  width: 200px;
+}
+
+#title {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+#signin {
+  float: right;
+}
